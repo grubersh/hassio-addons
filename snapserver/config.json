@@ -1,6 +1,6 @@
 {
   "name": "snapcast-server",
-  "version": "0.26",
+  "version": "0.26.1",
   "slug": "snapcastserver",
   "description": "Snapcast Server",
   "startup": "system",
@@ -10,10 +10,6 @@
   "options": { 
     "stream": {
         "streams": ["pipe:///share/snapfifo/librespot?name=SpotifyConnect&sampleformat=44100:16:2", "tcp://0.0.0.0?port=4953&name=snapbroadcast"],
-        "buffer": "1000",
-        "codec": "flac",
-        "send_to_muted": "false",
-        "sampleformat": "48000:16:2"
         },
     "http": {
         "enabled": "true",

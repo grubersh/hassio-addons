@@ -1,6 +1,6 @@
 {
   "name": "snapcast-server",
-  "version": "0.25",
+  "version": "0.26",
   "slug": "snapcastserver",
   "description": "Snapcast Server",
   "startup": "system",
@@ -9,7 +9,7 @@
   "map": ["share:rw"],
   "options": { 
     "stream": {
-        "streams": ["pipe:///share/snapfifo/librespot?name=SpotifyConnect&sampleformat=44100:16:2", "pipe:///share/snapfifo/mopidy?name=Mopidy&sampleformat=44100:16:2", "tcp://0.0.0.0?port=4953&name=snapbroadcast"],
+        "streams": ["pipe:///share/snapfifo/librespot?name=SpotifyConnect&sampleformat=44100:16:2", "tcp://0.0.0.0?port=4953&name=snapbroadcast"],
         "buffer": "1000",
         "codec": "flac",
         "send_to_muted": "false",
